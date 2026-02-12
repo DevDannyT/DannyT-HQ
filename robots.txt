@@ -1,0 +1,5 @@
+# robots.txt for https://dannytracy.com
+User-agent: *
+Allow: /
+
+Sitemap: https://dannytracy.com/sitemap.xml

@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="format-detection" content="telephone=no" />
+  <script>(function(d){var e=d.documentElement;e.classList.remove("no-js");e.classList.add("js");e.dataset.js="pending";})(document);</script>
+
+  <title>Daniel Tracy — Software Engineer (Scripting, Programs, Systems)</title>
+  <meta name="description" content="Daniel Tracy — Software engineer specializing in scripting languages and building programs. Clean code, strong fundamentals, and collaboration that ships. Texas, USA." />
+  <meta name="keywords" content="Daniel Tracy, DevDannyT, Software Engineer, Python, Java, C++, scripting, build systems, embedded development, Linux, Docker" />
+  <meta name="author" content="Daniel Tracy" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dannytracy.com/" />
+
+  <link rel="me" href="https://github.com/DevDannyT" />
+  <link rel="me" href="https://www.linkedin.com/in/daniel-tracy-926937b8/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dannytracy.com/" />
+  <meta property="og:title" content="Daniel Tracy — Software Engineer" />
+  <meta property="og:description" content="Clean code, strong fundamentals, and collaboration that ships." />
+  <meta property="og:image" content="https://dannytracy.com/assets/images/og-image.jpg" />
+  <meta property="og:site_name" content="Daniel Tracy" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Daniel Tracy — Software Engineer" />
+  <meta name="twitter:description" content="Clean code, strong fundamentals, and collaboration that ships." />
+  <meta name="twitter:image" content="https://dannytracy.com/assets/images/og-image.jpg" />
+
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="msapplication-TileColor" content="#0a0a0f" />
+
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" sizes="any" />
+  <link rel="apple-touch-icon" href="./assets/images/profile@2x.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=JetBrains+Mono:wght@400;500;600;700&display=swap" as="style" />
+  <link rel="preload" href="./assets/images/hero-avatar.png" as="image" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting-cells.css" />
+
+  <link rel="stylesheet" href="./styles.css?v=20260209r1" />
+  <link rel="manifest" href="./manifest.webmanifest?v=20260209r1" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Tracy",
+    "alternateName": "DevDannyT",
+    "url": "https://dannytracy.com/",
+    "image": "https://dannytracy.com/assets/images/profile.jpg",
+    "jobTitle": "Software engineer specializing in scripting languages and building programs",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Texas",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://github.com/DevDannyT",
+      "https://www.linkedin.com/in/daniel-tracy-926937b8/"
+    ],
+    "knowsAbout": [
+      "Python",
+      "Java",
+      "C++",
+      "Docker",
+      "Linux",
+      "Build Systems",
+      "Embedded Development",
+      "Scripting"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+  <div id="tsparticles" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="crt-overlay" aria-hidden="true"></div>
+  <canvas id="matrix-bg" aria-hidden="true"></canvas>
+
+  <div class="circuit-lines" aria-hidden="true">
+    <svg class="circuit-svg circuit-left" viewBox="0 0 200 600" preserveAspectRatio="none">
+      <path class="circuit-path" d="M0,50 L50,50 L50,150 L100,150 L100,100 L150,100 L150,200 L80,200 L80,300 L120,300 L120,250 L180,250 L180,350 L60,350 L60,450 L140,450 L140,400 L200,400" />
+      <path class="circuit-path delay-1" d="M0,200 L30,200 L30,280 L70,280 L70,320 L110,320 L110,380 L50,380 L50,480 L90,480 L90,550 L150,550" />
+    </svg>
+    <svg class="circuit-svg circuit-right" viewBox="0 0 200 600" preserveAspectRatio="none">
+      <path class="circuit-path delay-2" d="M200,80 L150,80 L150,160 L100,160 L100,120 L50,120 L50,220 L120,220 L120,280 L80,280 L80,360 L140,360 L140,420 L60,420 L60,500 L100,500" />
+      <path class="circuit-path delay-3" d="M200,300 L170,300 L170,380 L130,380 L130,340 L90,340 L90,440 L150,440 L150,520 L110,520 L110,580 L50,580" />
+    </svg>
+  </div>
+
+  <header class="header" role="banner">
+    <a href="#hero" class="logo" aria-label="Daniel Tracy - Home">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">DT</span>
+      <span class="logo-bracket">]</span>
+    </a>
+
+    <nav class="nav" id="nav" role="navigation" aria-label="Primary navigation">
+      <a href="#hero" class="nav-link">[ /HOME ]</a>
+      <a href="#operations" class="nav-link">[ /PROJECTS ]</a>
+      <a href="#skills" class="nav-link">[ /SKILLS ]</a>
+      <a href="#about" class="nav-link">[ /ABOUT ]</a>
+      <a href="#contact" class="nav-link">[ /CONTACT ]</a>
+    </nav>
+
+    <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main role="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-status-badges">
+        <div class="status-badge badge-left" data-float aria-hidden="true">
+          <div class="badge-indicator pulse-magenta"></div>
+          <div class="badge-content">
+            <span class="badge-label">STATUS:</span>
+            <span class="badge-value magenta">OPEN_TO_WORK</span>
+          </div>
+        </div>
+        <div class="status-badge badge-top-right" data-float aria-hidden="true">
+          <div class="badge-indicator pulse-cyan"></div>
+          <div class="badge-content">
+            <span class="badge-label">MODE:</span>
+            <span class="badge-value cyan">ENGINEER</span>
+          </div>
+        </div>
+        <div class="status-badge badge-bottom-right" data-float aria-hidden="true">
+          <div class="badge-indicator pulse-green"></div>
+          <div class="badge-content">
+            <span class="badge-label">FOCUS:</span>
+            <span class="badge-value green">CLEAN_CODE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-terminal">
+        <div class="terminal-header">
+          <div class="terminal-status">
+            <span class="status-dot"></span>
+            <span class="status-text">CONNECTED</span>
+          </div>
+          <span class="terminal-title">devdannyt@workstation:~/portfolio</span>
+          <span class="terminal-ping">PING: 12ms</span>
+        </div>
+
+        <div class="terminal-body">
+          <div class="terminal-matrix-overlay" aria-hidden="true"></div>
+          <div class="terminal-content">
+            <div class="terminal-line">
+              <span class="prompt">devdannyt@workstation:~$</span>
+              <span class="command typing-text">./deploy_portfolio.sh --mode=hireable --quality=clean_code</span>
+            </div>
+            <div class="terminal-output">
+              <span class="output-line">[*] Bootstrapping environment...</span>
+              <span class="output-line">[*] Running checks: lint, tests, build...</span>
+              <span class="output-line success">[+] READY</span>
+            </div>
+
+            <h1 id="hero-title" class="hero-title glitch-wrapper">
+              <span class="glitch-text" data-text="DANIEL TRACY" data-splitting>DANIEL TRACY</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              <span class="bracket">&lt;</span>
+              <span class="subtitle-text">Software engineer specializing in scripting languages and building programs</span>
+              <span class="bracket">/&gt;</span>
+              <span class="cursor-blink">_</span>
+            </p>
+
+            <p class="hero-subtitle" style="margin-top: 10px;">
+              <span class="bracket">&lt;</span>
+              <span class="subtitle-text">Clean code, strong fundamentals, and collaboration that ships.</span>
+              <span class="bracket">/&gt;</span>
+            </p>
+
+            <div class="hero-tags">
+              <span class="tag">CLEAN_CODE</span>
+              <span class="tag">COLLABORATION</span>
+              <span class="tag">SYSTEMS_MINDSET</span>
+              <span class="tag">SHIPPING</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-hex-cluster" aria-hidden="true">
+        <div class="hex hex-1"><span>01</span></div>
+        <div class="hex hex-2"><span>DT</span></div>
+        <div class="hex hex-3"><span>7A</span></div>
+        <div class="hex hex-4"><span>3C</span></div>
+        <div class="hex hex-5"><span>9F</span></div>
+      </div>
+
+      <div class="hero-cta" data-animate="fade-up">
+        <a href="#operations" class="btn btn-cyber" data-magnetic>
+          <span class="btn-glitch" data-text="VIEW_PROJECTS">VIEW_PROJECTS</span>
+          <i class="ri-arrow-down-line" aria-hidden="true"></i>
+        </a>
+
+        <a href="#contact" class="btn btn-ghost" data-magnetic>
+          <i class="ri-terminal-line" aria-hidden="true"></i>
+          <span>CONTACT</span>
+        </a>
+
+        <a href="https://github.com/DevDannyT" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-magnetic>
+          <i class="ri-github-line" aria-hidden="true"></i>
+          <span>GITHUB</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/daniel-tracy-926937b8/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-magnetic>
+          <i class="ri-linkedin-line" aria-hidden="true"></i>
+          <span>LINKEDIN</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="electric-divider" aria-hidden="true">
+      <svg class="lightning-svg" viewBox="0 0 100 30" preserveAspectRatio="none">
+        <path class="lightning-path lightning-main" d="M0,15 L10,12 L15,18 L25,10 L30,20 L40,8 L45,22 L55,5 L60,18 L70,12 L75,20 L85,10 L90,15 L100,15" />
+        <path class="lightning-path lightning-secondary" d="M0,15 L8,18 L18,10 L28,22 L38,8 L48,20 L58,12 L68,18 L78,8 L88,20 L100,15" />
+        <path class="lightning-path lightning-tertiary" d="M0,15 L12,8 L22,20 L32,12 L42,18 L52,10 L62,22 L72,8 L82,18 L92,12 L100,15" />
+      </svg>
+      <div class="spark spark-1"></div>
+      <div class="spark spark-2"></div>
+      <div class="spark spark-3"></div>
+    </div>
+
+    <section class="operations" id="operations" aria-labelledby="operations-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag-wrap">
+            <span class="section-tag">&lt;CURRENT_OPERATIONS/&gt;</span>
+            <span class="section-status online">ACTIVE</span>
+          </div>
+          <h2 id="operations-title" class="section-title">
+            <span class="title-bracket">[</span>
+            <span class="title-text">PROJECTS</span>
+            <span class="title-bracket">]</span>
+          </h2>
+        </div>
+
+        <div class="cyber-panel operations-panel">
+          <div class="panel-corner corner-tl"></div>
+          <div class="panel-corner corner-tr"></div>
+          <div class="panel-corner corner-bl"></div>
+          <div class="panel-corner corner-br"></div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-animate="fade-up" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+              <div class="project-header">
+                <span class="project-index">01</span>
+                <span class="project-status">UNDER_CONSTRUCTION</span>
+              </div>
+              <h3 class="project-title">Project Placeholder</h3>
+              <p class="project-desc">Under construction. Details coming soon.</p>
+              <div class="project-tags">
+                <span>BLANK</span>
+                <span>BLANK</span>
+                <span>BLANK</span>
+              </div>
+              <a href="#" class="project-link" aria-disabled="true" tabindex="-1">
+                <span>COMING_SOON</span>
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="project-card" data-animate="fade-up" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+              <div class="project-header">
+                <span class="project-index">02</span>
+                <span class="project-status">UNDER_CONSTRUCTION</span>
+              </div>
+              <h3 class="project-title">Project Placeholder</h3>
+              <p class="project-desc">Under construction. Details coming soon.</p>
+              <div class="project-tags">
+                <span>BLANK</span>
+                <span>BLANK</span>
+                <span>BLANK</span>
+              </div>
+              <a href="#" class="project-link" aria-disabled="true" tabindex="-1">
+                <span>COMING_SOON</span>
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="project-card" data-animate="fade-up" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+              <div class="project-header">
+                <span class="project-index">03</span>
+                <span class="project-status">UNDER_CONSTRUCTION</span>
+              </div>
+              <h3 class="project-title">Project Placeholder</h3>
+              <p class="project-desc">Under construction. Details coming soon.</p>
+              <div class="project-tags">
+                <span>BLANK</span>
+                <span>BLANK</span>
+                <span>BLANK</span>
+              </div>
+              <a href="#" class="project-link" aria-disabled="true" tabindex="-1">
+                <span>COMING_SOON</span>
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="project-card" data-animate="fade-up" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+              <div class="project-header">
+                <span class="project-index">04</span>
+                <span class="project-status">UNDER_CONSTRUCTION</span>
+              </div>
+              <h3 class="project-title">Project Placeholder</h3>
+              <p class="project-desc">Under construction. Details coming soon.</p>
+              <div class="project-tags">
+                <span>BLANK</span>
+                <span>BLANK</span>
+                <span>BLANK</span>
+              </div>
+              <a href="#" class="project-link" aria-disabled="true" tabindex="-1">
+                <span>COMING_SOON</span>
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="project-card" data-animate="fade-up" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+              <div class="project-header">
+                <span class="project-index">05</span>
+                <span class="project-status">UNDER_CONSTRUCTION</span>
+              </div>
+              <h3 class="project-title">Project Placeholder</h3>
+              <p class="project-desc">Under construction. Details coming soon.</p>
+              <div class="project-tags">
+                <span>BLANK</span>
+                <span>BLANK</span>
+                <span>BLANK</span>
+              </div>
+              <a href="#" class="project-link" aria-disabled="true" tabindex="-1">
+                <span>COMING_SOON</span>
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article class="project-card" data-animate="fade-up" data-tilt data-tilt-glare data-tilt-max-glare="0.15">
+              <div class="project-header">
+                <span class="project-index">06</span>
+                <span class="project-status">UNDER_CONSTRUCTION</span>
+              </div>
+              <h3 class="project-title">Project Placeholder</h3>
+              <p class="project-desc">Under construction. Details coming soon.</p>
+              <div class="project-tags">
+                <span>BLANK</span>
+                <span>BLANK</span>
+                <span>BLANK</span>
+              </div>
+              <a href="#" class="project-link" aria-disabled="true" tabindex="-1">
+                <span>COMING_SOON</span>
+                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+
+          <a href="https://github.com/DevDannyT" target="_blank" rel="noopener noreferrer" class="view-all-link">
+            <span>VIEW_ALL_REPOSITORIES</span>
+            <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="electric-divider" aria-hidden="true">
+      <svg class="lightning-svg" viewBox="0 0 100 30" preserveAspectRatio="none">
+        <path class="lightning-path lightning-main" d="M0,15 L10,12 L15,18 L25,10 L30,20 L40,8 L45,22 L55,5 L60,18 L70,12 L75,20 L85,10 L90,15 L100,15" />
+        <path class="lightning-path lightning-secondary" d="M0,15 L8,18 L18,10 L28,22 L38,8 L48,20 L58,12 L68,18 L78,8 L88,20 L100,15" />
+      </svg>
+    </div>
+
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag-wrap">
+            <span class="section-tag">&lt;SKILLS_CLUSTER/&gt;</span>
+            <span class="section-status online">LOADED</span>
+          </div>
+          <h2 id="skills-title" class="section-title">
+            <span class="title-bracket">[</span>
+            <span class="title-text">TECH_STACK</span>
+            <span class="title-bracket">]</span>
+          </h2>
+        </div>
+
+        <div class="skills-container">
+          <div class="cyber-panel skills-panel">
+            <div class="panel-corner corner-tl"></div>
+            <div class="panel-corner corner-tr"></div>
+            <div class="panel-corner corner-bl"></div>
+            <div class="panel-corner corner-br"></div>
+
+            <div class="skills-grid">
+              <div class="skill-category">
+                <div class="category-header">
+                  <div class="hex-icon"><i class="ri-code-s-slash-line"></i></div>
+                  <h3>LANGUAGES</h3>
+                </div>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">Python</span>
+                      <span class="skill-level">ADVANCED</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill" style="--fill: 80%"></div></div>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">Java</span>
+                      <span class="skill-level">ADVANCED</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill" style="--fill: 75%"></div></div>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">C++</span>
+                      <span class="skill-level">ADVANCED</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill" style="--fill: 75%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <div class="category-header">
+                  <div class="hex-icon"><i class="ri-stack-line"></i></div>
+                  <h3>TOOLS</h3>
+                </div>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">Docker</span>
+                      <span class="skill-level">INTERMEDIATE</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill cyan" style="--fill: 60%"></div></div>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">Build Systems</span>
+                      <span class="skill-level">ADVANCED</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill cyan" style="--fill: 70%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <div class="category-header">
+                  <div class="hex-icon"><i class="ri-tools-line"></i></div>
+                  <h3>PLATFORMS</h3>
+                </div>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">Linux</span>
+                      <span class="skill-level">EXPERT</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill magenta" style="--fill: 90%"></div></div>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">Embedded Development</span>
+                      <span class="skill-level">ADVANCED</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill magenta" style="--fill: 70%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <div class="category-header">
+                  <div class="hex-icon"><i class="ri-server-line"></i></div>
+                  <h3>EXTRAS</h3>
+                </div>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-info">
+                      <span class="skill-name">Scripting & Automation</span>
+                      <span class="skill-level">ADVANCED</span>
+                    </div>
+                    <div class="bar-track"><div class="bar-fill purple" style="--fill: 80%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="hex-cluster-decoration" aria-hidden="true">
+            <div class="hex-deco hex-d1"></div>
+            <div class="hex-deco hex-d2"></div>
+            <div class="hex-deco hex-d3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="electric-divider" aria-hidden="true">
+      <svg class="lightning-svg" viewBox="0 0 100 30" preserveAspectRatio="none">
+        <path class="lightning-path lightning-main" d="M0,15 L10,12 L15,18 L25,10 L30,20 L40,8 L45,22 L55,5 L60,18 L70,12 L75,20 L85,10 L90,15 L100,15" />
+      </svg>
+    </div>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag-wrap">
+            <span class="section-tag">&lt;SYSTEM_INFO/&gt;</span>
+            <span class="section-status online">ONLINE</span>
+          </div>
+          <h2 id="about-title" class="section-title">
+            <span class="title-bracket">[</span>
+            <span class="title-text">ABOUT</span>
+            <span class="title-bracket">]</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="cyber-panel about-panel">
+            <div class="panel-corner corner-tl"></div>
+            <div class="panel-corner corner-tr"></div>
+            <div class="panel-corner corner-bl"></div>
+            <div class="panel-corner corner-br"></div>
+
+            <div class="about-content">
+              <div class="about-avatar">
+                <div class="avatar-frame">
+                  <img data-src="./assets/images/hero-avatar.png" alt="Daniel Tracy" width="200" height="200" class="lazyload" />
+                  <div class="avatar-glitch-overlay"></div>
+                </div>
+                <div class="avatar-scan-line"></div>
+              </div>
+
+              <div class="about-text">
+                <div class="terminal-block">
+                  <div class="term-line"><span class="prompt">$</span> cat /etc/engineer.conf</div>
+                  <div class="term-output">
+                    <p><span class="key">NAME:</span> <span class="val cyan">DANIEL TRACY</span></p>
+                    <p><span class="key">HANDLE:</span> <span class="val">DevDannyT</span></p>
+                    <p><span class="key">LOCATION:</span> <span class="val">Texas, USA</span></p>
+                    <p><span class="key">FOCUS:</span> <span class="val green">Scripting, Programs, Systems</span></p>
+                    <p><span class="key">STATUS:</span> <span class="val blink">[OPEN_TO_WORK]</span></p>
+                  </div>
+                </div>
+
+                <p class="about-desc">
+                  I’m a software engineer focused on writing clean, reliable programs and building tools that make teams faster.
+                  I enjoy scripting and automation, working close to systems, and collaborating closely to ship polished work.
+                  This site will evolve as I build and track progress.
+                </p>
+
+                <ul class="about-list">
+                  <li><span class="marker">&gt;</span> Clean, maintainable code with strong fundamentals</li>
+                  <li><span class="marker">&gt;</span> Scripting and automation to remove friction</li>
+                  <li><span class="marker">&gt;</span> Systems mindset: reliability, debugging, performance</li>
+                  <li><span class="marker">&gt;</span> Collaboration and communication that ships</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cyber-panel stats-panel">
+            <div class="panel-corner corner-tl"></div>
+            <div class="panel-corner corner-tr"></div>
+            <div class="panel-corner corner-bl"></div>
+            <div class="panel-corner corner-br"></div>
+
+            <h3 class="panel-title">LEETCODE_STATS</h3>
+
+            <div class="leetcode-display">
+              <div class="leetcode-wheel">
+                <svg viewBox="0 0 100 100">
+                  <circle class="wheel-bg" cx="50" cy="50" r="40" />
+                  <circle class="wheel-progress easy" cx="50" cy="50" r="40" stroke-dasharray="0 251" stroke-dashoffset="0" />
+                  <circle class="wheel-progress medium" cx="50" cy="50" r="40" stroke-dasharray="0 251" stroke-dashoffset="0" />
+                  <circle class="wheel-progress hard" cx="50" cy="50" r="40" stroke-dasharray="0 251" stroke-dashoffset="0" />
+                </svg>
+                <div class="wheel-center">
+                  <span class="wheel-number">0</span>
+                  <span class="wheel-label">SOLVED</span>
+                </div>
+              </div>
+
+              <div class="leetcode-breakdown">
+                <div class="lc-stat easy">
+                  <span class="lc-label">EASY</span>
+                  <span class="lc-count">0/0</span>
+                </div>
+                <div class="lc-stat medium">
+                  <span class="lc-label">MEDIUM</span>
+                  <span class="lc-count">0/0</span>
+                </div>
+                <div class="lc-stat hard">
+                  <span class="lc-label">HARD</span>
+                  <span class="lc-count">0/0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stats-metrics">
+              <div class="metric">
+                <span class="metric-val">0</span>
+                <span class="metric-label">RATING</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">0</span>
+                <span class="metric-label">RANK</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">0%</span>
+                <span class="metric-label">TOP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag-wrap">
+            <span class="section-tag">&lt;HIGHLIGHTS/&gt;</span>
+            <span class="section-status online">VERIFIED</span>
+          </div>
+          <h2 id="achievements-title" class="section-title">
+            <span class="title-bracket">[</span>
+            <span class="title-text">HIGHLIGHTS</span>
+            <span class="title-bracket">]</span>
+          </h2>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card legend">
+            <div class="achievement-rank">LEGEND</div>
+            <div class="achievement-hex">CI</div>
+            <div class="achievement-info">
+              <h3>Build Reliability</h3>
+              <p>Owned and stabilized multi-target CI pipelines</p>
+            </div>
+          </div>
+
+          <div class="achievement-card legend">
+            <div class="achievement-rank">LEGEND</div>
+            <div class="achievement-hex">TOOL</div>
+            <div class="achievement-info">
+              <h3>Developer Tooling</h3>
+              <p>Automation that removed friction for engineers</p>
+            </div>
+          </div>
+
+          <div class="achievement-card legend">
+            <div class="achievement-rank">LEGEND</div>
+            <div class="achievement-hex">SYS</div>
+            <div class="achievement-info">
+              <h3>Systems Engineering</h3>
+              <p>Multi-toolchain, cross-platform experience</p>
+            </div>
+          </div>
+
+          <div class="achievement-card legend">
+            <div class="achievement-rank">LEGEND</div>
+            <div class="achievement-hex">COL</div>
+            <div class="achievement-info">
+              <h3>Collaboration</h3>
+              <p>Clean code and strong communication</p>
+            </div>
+          </div>
+
+          <div class="achievement-card gold">
+            <div class="achievement-rank">GOLD</div>
+            <div class="achievement-hex">SHIP</div>
+            <div class="achievement-info">
+              <h3>Shipping</h3>
+              <p>Side projects that actually launch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag-wrap">
+            <span class="section-tag">&lt;INIT_CONNECTION/&gt;</span>
+            <span class="section-status online">READY</span>
+          </div>
+          <h2 id="contact-title" class="section-title">
+            <span class="title-bracket">[</span>
+            <span class="title-text">CONTACT</span>
+            <span class="title-bracket">]</span>
+          </h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="cyber-panel contact-panel">
+            <div class="panel-corner corner-tl"></div>
+            <div class="panel-corner corner-tr"></div>
+            <div class="panel-corner corner-bl"></div>
+            <div class="panel-corner corner-br"></div>
+
+            <div class="contact-content">
+              <h3 class="contact-heading">LET'S_TALK</h3>
+              <p class="contact-desc">Open to software roles and collaboration. Feel free to reach out.</p>
+
+              <div class="contact-links">
+                <a href="mailto:Danny.tracy09@gmail.com" class="contact-link">
+                  <div class="link-icon"><i class="ri-mail-line"></i></div>
+                  <div class="link-info">
+                    <span class="link-label">EMAIL</span>
+                    <span class="link-value">Danny.tracy09@gmail.com</span>
+                  </div>
+                  <i class="ri-arrow-right-up-line link-arrow"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/daniel-tracy-926937b8/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <div class="link-icon"><i class="ri-linkedin-line"></i></div>
+                  <div class="link-info">
+                    <span class="link-label">LINKEDIN</span>
+                    <span class="link-value">/in/daniel-tracy-926937b8</span>
+                  </div>
+                  <i class="ri-arrow-right-up-line link-arrow"></i>
+                </a>
+
+                <a href="https://github.com/DevDannyT" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <div class="link-icon"><i class="ri-github-line"></i></div>
+                  <div class="link-info">
+                    <span class="link-label">GITHUB</span>
+                    <span class="link-value">DevDannyT</span>
+                  </div>
+                  <i class="ri-arrow-right-up-line link-arrow"></i>
+                </a>
+              </div>
+
+              <div class="contact-location">
+                <i class="ri-map-pin-line"></i>
+                <span>Texas, USA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hacker-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>CLEAN CODE...</span>
+          <span class="dot">◆</span>
+          <span>STRONG FUNDAMENTALS...</span>
+          <span class="dot">◆</span>
+          <span>COLLABORATION THAT SHIPS...</span>
+          <span class="dot">◆</span>
+          <span>DEVDANNYT // ENGINEER MODE</span>
+          <span class="dot">◆</span>
+          <span>ALWAYS IMPROVING...</span>
+          <span class="dot">◆</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">[DANIEL_TRACY]</span>
+        <span class="footer-copy">© <time datetime="2026">2026</time> :: SYSTEM.ONLINE</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://github.com/DevDannyT" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-tracy-926937b8/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js"></script>
+  <script src="./script.js?v=20260209r1" defer></script>
+</body>
+</html>
